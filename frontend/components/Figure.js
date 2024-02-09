@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledFigureComponents = styled.figure`
-max-width: 200px;
 
 figcaption {
   font-style: italic;

@@ -20,6 +20,7 @@ p {
   &::first-line {
     font-size: 1.5em;
   }
+
 }`
 
 export default function StyledCard ({ title, text, imageURL, date }) {
@@ -31,7 +32,7 @@ export default function StyledCard ({ title, text, imageURL, date }) {
       <img src={imageURL} alt="NASA APOD" />
       <StyledFigure
       imageURL={imageURL}
-      caption={date}
+      date={date}
       />
     </StyledCardContainer>
     )
