@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import StyledFigure from './Figure'
 
-const StyledCard = styled.div`
+const StyledCardContainer = styled.div`
 border: 1px solid black;
 padding: 2rem;
 border-radius: 12px;
@@ -25,7 +25,7 @@ p {
 export default function StyledCard ({ title, text, imageURL, date }) {
   console.log("sara")
     return (
-      <StyledCard color="orange" className = 'card'>
+      <StyledCardContainer color="orange" className = 'card'>
       <h2>{title}</h2>
       <p>{text}</p>
       <img src={imageURL} alt="NASA APOD" />
@@ -33,6 +33,6 @@ export default function StyledCard ({ title, text, imageURL, date }) {
       imageURL={imageURL}
       caption={date}
       />
-    </StyledCard>
+    </StyledCardContainer>
     )
   } 
